@@ -49,3 +49,4 @@ function displayDateTime() {
     
     document.getElementById('datetime').innerHTML = dateTimeString;
 }
+setInterval(displayDateTime, 1000);
