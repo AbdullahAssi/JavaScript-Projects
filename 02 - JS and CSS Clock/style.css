@@ -60,3 +60,14 @@ body {
     letter-spacing: 2px;
 }
 
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    font-family: monospace;
+    width: 100%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}

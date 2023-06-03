@@ -22,6 +22,8 @@ function setdate(){
 
 
 setInterval(setdate, 1000); // 1000 is the interval in milliseconds
+
+
 function digital() {
     const now = new Date();
     const seconds = now.getSeconds();
@@ -36,3 +38,14 @@ function digital() {
 }
 
 setInterval(digital, 1000);
+
+function displayDateTime() {
+    var currentDateTime = new Date();
+    
+    var date = currentDateTime.toDateString();
+    var time = currentDateTime.toLocaleTimeString();
+    
+    var dateTimeString = 'Current Date: ' + date + '<br>Current Time: ' + time;
+    
+    document.getElementById('datetime').innerHTML = dateTimeString;
+}
